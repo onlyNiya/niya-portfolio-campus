@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="刘亚怡 Niya 的个人作品集，涵盖校园官媒运营、大型公益宣传、实习经历、视觉设计、剧本创作与电影研究。"
+    />
+    <meta name="theme-color" content="#692f34" />
+    <title>刘亚怡 Niya — Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳至主要内容</a>
+
+    <main id="main-content">
+      <section class="home-view view" id="home-view" aria-label="作品集首页">
+        <header class="identity-panel">
+          <div class="identity-copy">
+            <p class="eyebrow">PORTFOLIO · 2026</p>
+            <h1>
+              <span class="name-zh">刘亚怡</span>
+              <span class="name-en">The Profolio of Niya</span>
+            </h1>
+          </div>
+
+          <nav class="contact-actions" aria-label="联系方式">
+            <a
+              class="icon-button"
+              href="assets/刘亚怡-个人简历.docx"
+              download="刘亚怡-个人简历.docx"
+              aria-label="下载刘亚怡的个人简历"
+              title="下载个人简历"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="3.25" />
+                <path d="M5.75 19.25c.35-4 2.45-6 6.25-6s5.9 2 6.25 6" />
+              </svg>
+            </a>
+
+            <div class="contact-disclosure" id="contact-disclosure">
+              <button
+                class="icon-button"
+                id="contact-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="contact-options"
+                aria-label="展开联系方式"
+                title="展开联系方式"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 6.25h14v9.5H9.25L5 19v-3.25z" />
+                  <path d="M9 11h.01M12 11h.01M15 11h.01" />
+                </svg>
+              </button>
+
+              <div class="contact-options" id="contact-options" aria-hidden="true">
+                <a
+                  class="icon-button contact-option"
+                  href="tel:13678246960"
+                  aria-label="拨打电话：13678246960"
+                  title="电话：13678246960"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7.2 4.5 9.6 8l-1.5 1.65a14.2 14.2 0 0 0 6.25 6.25L16 14.4l3.5 2.4-1.1 2.45c-.3.65-1 1-1.7.85C9.75 18.7 5.3 14.25 3.9 7.3c-.15-.7.2-1.4.85-1.7z" />
+                  </svg>
+                </a>
+                <a
+                  class="icon-button contact-option"
+                  href="mailto:13678246960@163.com"
+                  aria-label="发送邮件至：13678246960@163.com"
+                  title="邮箱：13678246960@163.com"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3.75 6.75h16.5v10.5H3.75z" />
+                    <path d="m4.4 7.4 7.6 5.7 7.6-5.7" />
+                  </svg>
+                </a>
+                <a
+                  class="icon-button contact-option rednote-option"
+                  href="https://xhslink.com/m/4iGDtDW0oiV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="打开泥鸭呀 Niya 的小红书主页"
+                  title="小红书主页"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 4.75h14v14.5H5z" />
+                    <path d="M8.25 9.25h7.5M8.25 12h7.5M8.25 14.75h4.5" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </nav>
+
+        </header>
+
+        <section class="portfolio-browser" aria-label="作品板块">
+          <div class="section-marker" aria-hidden="true">
+            <span id="current-number">01</span>
+            <span class="marker-line"></span>
+            <span id="total-number">04</span>
+          </div>
+
+          <div class="project-stage" id="project-stage" aria-live="polite"></div>
+
+          <div class="browser-controls">
+            <button class="round-control" id="previous-project" type="button" aria-label="上一个项目">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 14 5-5 5 5" /></svg>
+            </button>
+            <div class="project-dots" id="project-dots" aria-label="选择项目"></div>
+            <button class="round-control" id="next-project" type="button" aria-label="下一个项目">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+            </button>
+          </div>
+
+          <p class="interaction-hint">
+            <span>SCROLL TO BROWSE</span>
+            <span>点击卡片展开作品</span>
+          </p>
+        </section>
+      </section>
+
+      <section class="detail-view view" id="detail-view" aria-label="项目详情" hidden>
+        <aside class="project-info">
+          <button class="back-button" id="back-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" /></svg>
+            <span>返回 / Back</span>
+          </button>
+
+          <div class="project-info-body">
+            <p class="eyebrow" id="detail-index"></p>
+            <h2 id="detail-title"></h2>
+            <p class="detail-title-en" id="detail-title-en"></p>
+            <p class="detail-summary" id="detail-summary"></p>
+
+            <dl class="project-meta" id="project-meta"></dl>
+            <div class="metric-list" id="metric-list"></div>
+
+            <div class="detail-actions" hidden>
+              <a class="text-link is-disabled" id="detail-primary-link" href="#">
+                查看原作 / View work
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+              <span class="link-note" id="detail-link-note"></span>
+            </div>
+          </div>
+
+          <p class="detail-progress"><span id="detail-progress-current">01</span> / <span id="detail-progress-total">04</span></p>
+        </aside>
+
+        <div class="project-gallery" id="project-gallery"></div>
+      </section>
+
+      <section class="detail-view case-detail-view view" id="case-detail-view" aria-label="小红书代表案例详情" hidden>
+        <aside class="project-info case-info">
+          <button class="back-button" id="case-back-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" /></svg>
+            <span>返回内容矩阵 / Back</span>
+          </button>
+
+          <div class="project-info-body">
+            <p class="eyebrow" id="case-detail-index"></p>
+            <h2 id="case-detail-title"></h2>
+            <p class="detail-title-en" id="case-detail-title-en"></p>
+            <p class="detail-summary" id="case-detail-summary"></p>
+
+            <dl class="project-meta" id="case-project-meta"></dl>
+            <div class="metric-list" id="case-metric-list"></div>
+
+            <div class="detail-actions">
+              <a class="text-link" id="case-primary-link" href="#" target="_blank" rel="noopener noreferrer">
+                查看原文 / View post
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+              <span class="link-note">外部链接将在新标签页打开</span>
+            </div>
+          </div>
+
+          <p class="detail-progress">CASE <span id="case-progress-current">01</span> / 04</p>
+        </aside>
+
+        <div class="project-gallery case-gallery" id="case-gallery"></div>
+      </section>
+
+      <section class="detail-view experience-detail-view view" id="experience-detail-view" aria-label="单段实习经历详情" hidden>
+        <aside class="project-info experience-info">
+          <button class="back-button" id="experience-back-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6" /></svg>
+            <span>返回实习列表 / Back</span>
+          </button>
+
+          <div class="project-info-body">
+            <p class="eyebrow" id="experience-detail-index"></p>
+            <h2 id="experience-detail-title"></h2>
+            <p class="detail-title-en" id="experience-detail-title-en"></p>
+            <p class="detail-summary" id="experience-detail-summary"></p>
+
+            <dl class="project-meta" id="experience-project-meta"></dl>
+            <div class="metric-list" id="experience-metric-list"></div>
+          </div>
+
+          <p class="detail-progress">EXPERIENCE <span id="experience-progress-current">01</span> / 04</p>
+        </aside>
+
+        <div class="project-gallery experience-gallery" id="experience-gallery"></div>
+      </section>
+    </main>
+
+    <div class="design-lightbox" id="design-lightbox" role="dialog" aria-modal="true" aria-labelledby="design-lightbox-title" hidden>
+      <button class="design-lightbox-close" id="design-lightbox-close" type="button" aria-label="关闭大图预览">
+        <span>关闭 / Close</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+      </button>
+      <figure>
+        <img id="design-lightbox-image" src="" alt="" />
+        <figcaption>
+          <strong id="design-lightbox-title"></strong>
+          <span id="design-lightbox-subtitle"></span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <script src="assets/vendor/hls.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
